@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap");
+
+/* Estilos globais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Container da tabela */
+.container-tabela {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  color: var(--cor-quintenaria);
+  background-color: #ffffffdc;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.tabela-titulo {
+  text-align: center;
+}
+
+.tabela-lista li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.tabela-imc,
+.tabela-resultado {
+  padding: 10px;
+}
+
+/* Container do formulário */
+.container-formulario {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Título do formulário */
+#titulo-formulario {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Playwrite NZ", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Campos do formulário */
+.campo-formulario {
+  margin-bottom: 20px;
+}
+
+.campo-formulario label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão de enviar */
+#botao-enviar {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#botao-enviar:hover {
+  background-color: #3e8e41;
+}
+
+/* Palleta de cores */
+:root {
+  --cor-primaria: #4caf50;
+  --cor-secundaria: #666;
+  --cor-terciaria: #f5f5f5;
+  --cor-quaternaria: #ddd;
+  --cor-quintenaria: #616161;
+
+  /* Cores para Resultados de IMC */
+  --imc-abaixo-peso: linear-gradient(to right, #ffd54f, #e6b800);
+  --imc-peso-normal: var(--cor-primaria);
+  --imc-sobrepeso: linear-gradient(to right, #ffa726, #ff6f00);
+  --imc-obesidade-grau1: linear-gradient(to right, #ffab91, #e65100);
+  --imc-obesidade-grau2: linear-gradient(to right, #ef9a9a, #c62828);
+  --imc-obesidade-grau3: linear-gradient(to right, #e57373, #b71c1c);
+  --imc-invalido: linear-gradient(to right, #ff0000, #ff6347);
+}
+
+.container-formulario {
+  background-color: var(--cor-terciaria);
+  border-color: var(--cor-quaternaria);
+}
+
+#titulo-formulario {
+  color: var(--cor-primaria);
+}
+
+.campo-formulario label {
+  color: var(--cor-secundaria);
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resultado {
+  width: 60%;
+  text-align: center;
+}
+
+.paragrafo-resultado,
+.imc-abaixo-peso,
+.imc-peso-normal,
+.imc-sobrepeso,
+.imc-obesidade-grau1,
+.imc-obesidade-grau2,
+.imc-obesidade-grau3,
+.bad {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--cor-terciaria);
+  background: var(--imc-sobrepeso);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imc-abaixo-peso {
+  background: var(--imc-abaixo-peso);
+}
+
+.imc-peso-normal {
+  background: var(--imc-peso-normal);
+}
+
+.imc-sobrepeso {
+  background: var(--imc-sobrepeso);
+}
+
+.imc-obesidade-grau1 {
+  background: var(--imc-obesidade-grau1);
+}
+
+.imc-obesidade-grau2 {
+  background: var(--imc-obesidade-grau2);
+}
+
+.imc-obesidade-grau3 {
+  background: var(--imc-obesidade-grau3);
+}
+
+.bad {
+  background: var(--imc-invalido);
+}
+
+#botao-enviar {
+  background-color: var(--cor-primaria);
+}

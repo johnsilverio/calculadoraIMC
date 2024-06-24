@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculo de IMC</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/devicon--thymeleaf.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- Formulário -->
+    <div class="container-formulario">
+      <h2 id="titulo-formulario">
+        <img
+          src="./assets/img/simple-icons--leaflet.png"
+          alt="Imagem de Logo do programa"
+          width="25px"
+        />Calculadora de IMC
+      </h2>
+      <div class="container-tabela">
+        <div class="tabela-imc">
+          <h3 class="tabela-titulo">IMC</h3>
+          <ul class="tabela-lista">
+            <li>Menos do que 18,5</li>
+            <li>Entre 18,5 e 25,9</li>
+            <li>Entre 25 e 29,9</li>
+            <li>Entre 30 e 34,9</li>
+            <li>Entre 35 e 39,9</li>
+            <li>Mais do que 40</li>
+          </ul>
+        </div>
+        <div class="tabela-resultado">
+          <h3 class="tabela-titulo">Resultado</h3>
+          <ul class="tabela-lista">
+            <li>Abaixo do peso</li>
+            <li>Peso normal</li>
+            <li>Sobrepeso</li>
+            <li>Obesidade grau 1</li>
+            <li>Obesidade grau 2</li>
+            <li>Obesidade grau 3</li>
+          </ul>
+        </div>
+      </div>
+      <form id="formulario" action="#" method="post">
+        <div class="campo-formulario">
+          <label for="peso">Peso:</label>
+          <input type="text" id="peso" name="peso" required />
+        </div>
+        <div class="campo-formulario">
+          <label for="altura">Altura:</label>
+          <input type="text" id="altura" name="altura" required />
+        </div>
+        <div class="rodape">
+          <button id="botao-enviar" type="submit">Enviar</button
+          ><span class="resultado"></span>
+        </div>
+      </form>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

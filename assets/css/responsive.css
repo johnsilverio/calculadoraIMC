@@ -1,0 +1,77 @@
+/* Tamanho de tela de tablet */
+@media (max-width: 480px) {
+  .container-formulario {
+    max-width: 95%;
+    margin: 10px auto;
+  }
+  .container-tabela {
+    flex-direction: column;
+  }
+  .tabela-imc,
+  .tabela-resultado {
+    width: 100%;
+  }
+  .campo-formulario {
+    margin-bottom: 5px;
+  }
+  #botao-enviar {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+/* Tamanho de tela de smartphone */
+@media (max-width: 480px) {
+  .container-formulario {
+    max-width: 95%;
+    margin: 10px auto;
+  }
+  .container-tabela {
+    flex-direction: column;
+  }
+  .tabela-imc,
+  .tabela-resultado {
+    width: 100%;
+  }
+  .campo-formulario {
+    margin-bottom: 5px;
+  }
+  #botao-enviar {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+/* Fonte e o espaçamento entre os elementos */
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* Largura e o espaçamento entre os elementos */
+.campo-formulario {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .campo-formulario {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .campo-formulario {
+    margin-bottom: 5px;
+  }
+}
